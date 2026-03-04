@@ -78,7 +78,7 @@ switch (operacaoSelecionada)
         Console.Write("Digite o primeiro número: ");
         string strprimeiroNumeroD = Console.ReadLine();
 
-        Console.Write("Digiteo segundo numero");
+        Console.Write("Digiteo segundo numero: ");
         string strsegundoNumeroD = Console.ReadLine();
 
         Console.WriteLine();
