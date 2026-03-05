@@ -1,6 +1,4 @@
-﻿using System.Net;
-
-Console.WriteLine("------------------------------");
+﻿Console.WriteLine("------------------------------");
 Console.WriteLine("Calculadora 2026");
 Console.WriteLine("------------------------------");
 
@@ -135,6 +133,12 @@ switch (operacaoSelecionada)
         decimal segundoNumeroD = Convert.ToDecimal(strsegundoNumeroD);
 
         decimal resultadoD = primeiroNumeroD / segundoNumeroD;
+
+        if (resultadoD == 0)
+        {
+            Console.WriteLine("Valor inálido, todo número divido por zero é zero!!");
+            break;
+        }
         Console.WriteLine("A subtração dos número é: " + resultadoD);
         break;
     case "5":
