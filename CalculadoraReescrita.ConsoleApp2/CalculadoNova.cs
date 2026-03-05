@@ -104,6 +104,18 @@ switch (operacaoSelecionada)
         resultado = primeiroNumero / segundoNumero;
         Console.WriteLine("O resultado da sua conta seria: " + resultado);
     break;
+    case "5":
+        Console.WriteLine("Digite o numero da tabuada desejada: ");
+        decimal numeroTabuada = Convert.ToDecimal(Console.ReadLine());
+        decimal resultadoTabuada;
+
+        for (int i = 0; i <= 10; i++)
+        {
+            resultadoTabuada = numeroTabuada * i;
+            Console.WriteLine(numeroTabuada + " X " + i + " = " + resultadoTabuada);
+
+        }
+    break;
 }
 
 
