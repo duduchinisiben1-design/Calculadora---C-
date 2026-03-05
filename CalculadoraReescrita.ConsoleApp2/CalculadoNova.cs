@@ -1,6 +1,7 @@
-﻿
-
-Console.WriteLine("-------------------------------");
+﻿bool deveContinuar = true;
+while (deveContinuar == true)
+{
+    Console.WriteLine("-------------------------------");
 Console.WriteLine("Seja Bem-Vindo à Calculadora Resumida, 2026");
 Console.WriteLine("-------------------------------");
 
@@ -35,8 +36,6 @@ int? primeiroNumero;
 int? segundoNumero;
 
 decimal? resultado;
-
-
 
 
 switch (operacaoSelecionada)
@@ -116,7 +115,17 @@ switch (operacaoSelecionada)
 
         }
     break;
+    case "S":
+        Console.WriteLine("Seu Programa Foi Finalizado Com Sucesso!!");
+
+        
+    return;
+    default:
+        Console.WriteLine("Opção Não Encontrda!!");
+    break;
 }
+}
+
 
 
 
